@@ -1,0 +1,207 @@
+/* 美团外卖风格 Sidebar */
+.sidebar-container {
+  background: #2D3436 !important;
+  
+  .el-menu {
+    border: none;
+    height: 100%;
+    width: 100% !important;
+    background: transparent !important;
+    padding: 8px 12px;
+
+    .el-menu-item {
+      color: rgba(255, 255, 255, 0.8);
+      height: 48px;
+      line-height: 48px;
+      padding: 0 16px !important;
+      margin: 4px 0;
+      border-radius: 24px;
+      transition: all 0.25s ease;
+      font-size: 14px;
+      font-weight: 500;
+
+      &:hover {
+        color: #FFD100 !important;
+        background: rgba(255, 209, 0, 0.12) !important;
+
+        span {
+          color: #FFD100 !important;
+        }
+      }
+
+      &:active {
+        background: rgba(255, 209, 0, 0.18) !important;
+      }
+    }
+
+    .router-link-active .el-menu-item {
+      background: #FFD100 !important;
+      color: #2D3436 !important;
+      border-radius: 24px !important;
+      box-shadow: 0 4px 12px rgba(255, 209, 0, 0.35);
+
+      span {
+        color: #2D3436 !important;
+        font-weight: 700 !important;
+      }
+      
+      i {
+        color: #2D3436 !important;
+      }
+    }
+
+    .is-active {
+      color: #FFD100 !important;
+    }
+  }
+
+  .el-submenu.is-active {
+    >.el-submenu__title {
+      color: #FFD100 !important;
+    }
+  }
+
+  .el-submenu {
+    >.el-submenu__title {
+      min-width: 200px !important;
+      background-color: transparent !important;
+      border-radius: 24px;
+      margin: 4px 0;
+      transition: all 0.25s ease;
+      
+      &:hover {
+        background: rgba(255, 209, 0, 0.1) !important;
+        color: #FFD100;
+      }
+    }
+
+    .el-menu-item {
+      min-width: 200px !important;
+      background-color: transparent !important;
+    }
+  }
+
+  .el-menu-item {
+    i {
+      color: inherit;
+      font-size: 20px;
+      margin-right: 12px;
+    }
+
+    position: relative;
+    font-size: 14px !important;
+    padding-left: 20px !important;
+  }
+
+  .simple-mode.first-level {
+    .submenu-title-noDropdown {
+      padding: 0 !important;
+      position: relative;
+
+      .el-tooltip {
+        padding: 0 !important;
+      }
+    }
+
+    .el-submenu {
+      overflow: hidden;
+
+      >.el-submenu__title {
+        padding: 0px !important;
+
+        .el-submenu__icon-arrow {
+          display: none;
+        }
+
+        >span {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  .el-icon-arrow-down {
+    &:before {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .el-submenu__title {
+    font-size: 15px !important;
+    position: relative;
+    z-index: 9;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+
+    svg {
+      margin-right: 10px !important;
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+
+  .horizontal-collapse-transition {
+    transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+  }
+
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+
+  .el-scrollbar__view {
+    height: 100%;
+  }
+
+  .el-scrollbar__bar.is-vertical {
+    right: 0px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+  }
+
+  .el-scrollbar__bar.is-horizontal {
+    display: none;
+  }
+
+  .svg-fill {
+    margin-right: 10px;
+  }
+}
+
+.hideSidebar {
+  .el-tooltip {
+    padding: 0 !important;
+    text-align: center;
+  }
+
+  .svg-fill {
+    margin-right: 0;
+  }
+
+  .sidebar-container .el-menu .el-menu-item {
+    padding-left: 0 !important;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(255, 209, 0, 0.12) !important;
+    }
+
+    i {
+      margin-right: 0;
+    }
+  }
+
+  .sidebar-container .router-link-active .el-menu-item,
+  .el-menu-item.is-active {
+    background: #FFD100 !important;
+    box-shadow: 0 4px 12px rgba(255, 209, 0, 0.35);
+    
+    i {
+      color: #2D3436 !important;
+    }
+  }
+
+  .sidebar-container .router-link-active .el-menu-item:hover,
+  .el-menu-item.is-active {
+    background: #FFE066 !important;
+  }
+}

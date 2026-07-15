@@ -1,0 +1,396 @@
+// 登录页面-定制样式
+.login-ruiji {
+  .el-form-item {
+    // border: none;
+    // border-bottom: 1px solid #ccc;
+    border: 1px solid red;
+  }
+
+  .add-distance {
+    margin-top: 68px;
+  }
+}
+
+// .dashboard-container {
+//   height: 100%;
+
+//   .container {
+//     height: 100%;
+//   }
+// }
+// 美团风格单选按钮样式
+.el-radio {
+  .el-radio__label {
+    color: #636E72;
+    font-weight: 600;
+  }
+  
+  .el-radio__inner {
+    border: 2px solid #DFE6E9;
+    width: 18px;
+    height: 18px;
+    
+    &:hover {
+      border-color: #FFD100;
+    }
+  }
+  
+  &.is-checked {
+    .el-radio__inner {
+      border-color: #FFD100;
+      background: #FFD100;
+      
+      &::after {
+        background-color: #2D3436;
+        width: 6px;
+        height: 6px;
+      }
+    }
+    
+    .el-radio__label {
+      color: #2D3436;
+    }
+  }
+}
+
+//统一修改单选按钮样式
+.el-radio__inner::after {
+  background-color: #2D3436;
+}
+
+//统一修改表单label的样式
+.el-form-item__label {
+  color: #2D3436;
+  font-weight: 600;
+}
+
+// 美团风格输入框样式
+.el-input__inner {
+  border: 2px solid #DFE6E9;
+  border-radius: 20px;
+  height: 42px;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  
+  &:hover {
+    border-color: #B2BEC3;
+  }
+  
+  &:focus {
+    border-color: #FFD100;
+    box-shadow: 0 0 0 4px rgba(255, 209, 0, 0.12);
+  }
+}
+
+// 日期选择器样式
+.el-date-editor {
+  .el-range-input {
+    font-size: 14px;
+  }
+  
+  .el-range-separator {
+    color: #B2BEC3;
+  }
+}
+
+.el-range-editor.el-input__inner {
+  border-radius: 20px;
+  border: 2px solid #DFE6E9;
+  
+  &:hover {
+    border-color: #B2BEC3;
+  }
+  
+  &:focus, &.is-active {
+    border-color: #FFD100;
+    box-shadow: 0 0 0 4px rgba(255, 209, 0, 0.12);
+  }
+}
+
+//统一修改输入框提示文字的样式
+.el-input__inner::-webkit-input-placeholder,
+.el-input__inner::-moz-placeholder,
+.el-input__inner::-ms-input-placeholder {
+  color: #9CA3AF;
+}
+
+//el-image相关样式设置
+.dashboard-container {
+  margin: 0 !important;
+  padding: 24px !important;
+
+  .el-table .cell {
+    .el-image>img {
+      width: 44px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+// 美团风格分页样式
+.el-pagination {
+  .el-pagination__total {
+    font-size: 14px;
+    font-weight: 600;
+    color: #636E72;
+  }
+
+  .el-pagination__sizes {
+    .el-input__inner {
+      font-size: 14px;
+      color: #636E72;
+      border-radius: 16px;
+      height: 36px;
+    }
+  }
+
+  .el-pager {
+    font-size: 14px;
+    font-weight: 600 !important;
+    
+    li {
+      border-radius: 50%;
+      margin: 0 3px;
+      min-width: 36px;
+      height: 36px;
+      line-height: 36px;
+      
+      &:hover:not(.active) {
+        color: #2D3436;
+        background: #FFF9E6;
+      }
+      
+      &.active {
+        background: #FFD100 !important;
+        color: #2D3436 !important;
+        box-shadow: 0 2px 8px rgba(255, 209, 0, 0.35);
+      }
+    }
+  }
+  
+  .btn-prev, .btn-next {
+    border-radius: 50%;
+    min-width: 36px;
+    height: 36px;
+    
+    &:hover {
+      color: #2D3436;
+      background: #FFF9E6;
+    }
+  }
+
+  .el-pagination__jump {
+    font-size: 14px;
+    font-weight: 600;
+    color: #636E72;
+
+    .el-pagination__editor.el-input {
+      .el-input__inner {
+        height: 36px;
+        border-radius: 16px;
+      }
+    }
+  }
+}
+
+// 美团风格弹框样式
+.el-dialog {
+  border-radius: 20px !important;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12) !important;
+  
+  .el-dialog__header {
+    background: #FFD100;
+    padding: 20px 24px;
+    border-bottom: none;
+    
+    .el-dialog__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2D3436;
+    }
+    
+    .el-dialog__headerbtn {
+      top: 20px;
+      right: 20px;
+      
+      .el-dialog__close {
+        font-size: 20px;
+        color: #2D3436;
+        
+        &:hover {
+          color: #636E72;
+        }
+      }
+    }
+  }
+  
+  .el-dialog__body {
+    padding: 24px;
+  }
+  
+  .el-dialog__footer {
+    padding: 16px 24px;
+    border-top: 1px solid #F5F6FA;
+    background: #FAFBFC;
+  }
+}
+
+//弹框关闭按钮颜色
+.el-icon-circle-close {
+  color: #636E72;
+  
+  &:hover {
+    color: #FF5252;
+  }
+}
+
+//表格编辑列内容样式修正
+.dashboard-container .container .el-table tbody tr td .cell button span {
+  padding: 0 10px;
+}
+
+.dashboard-container .container .el-table tbody tr td .cell button:first-child span {
+  padding-left: 10px;
+}
+
+// 按钮的背景色设置 - 美团外卖风格
+.el-button--primary {
+  color: #2D3436;
+  background: #FFD100;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: 0 3px 12px rgba(255, 209, 0, 0.35);
+  transition: all 0.25s ease;
+  
+  &:hover, &:focus {
+    background: #FFE066;
+    box-shadow: 0 4px 16px rgba(255, 209, 0, 0.45);
+    transform: translateY(-1px);
+    color: #2D3436;
+    border: none;
+  }
+  
+  &:active {
+    background: #F5C000;
+    transform: translateY(0);
+    color: #2D3436;
+    border: none;
+  }
+}
+
+.el-button--default {
+  border-radius: 20px;
+  border: 2px solid #DFE6E9;
+  color: #636E72;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  
+  &:hover, &:focus {
+    border-color: #FFD100;
+    color: #2D3436;
+    background: #FFF9E6;
+  }
+}
+
+.el-button--text {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #FF9500;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    color: #FF7600;
+  }
+}
+
+// 美团风格表格样式
+.el-table {
+  border-radius: 12px;
+  overflow: hidden;
+  
+  // 表头样式
+  th {
+    background: #F5F6FA !important;
+    color: #2D3436 !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    border-bottom: 2px solid #DFE6E9 !important;
+  }
+  
+  // 表格行样式
+  td {
+    font-size: 14px !important;
+    color: #636E72;
+    border-bottom: 1px solid #F5F6FA !important;
+  }
+  
+  // 斑马纹
+  .el-table__row--striped td {
+    background: #FAFBFC !important;
+  }
+  
+  // 悬停效果
+  .el-table__body tr:hover > td {
+    background: #FFF9E6 !important;
+  }
+}
+
+.el-table .cell,
+.el-table th div,
+.el-table--border td:first-child .cell,
+.el-table--border th:first-child .cell {
+  padding-left: 24px !important;
+  padding-right: 12px !important;
+}
+
+.el-table-column--selection .cell {
+  padding-left: 16px !important;
+  padding-right: 0 !important;
+  text-overflow: clip !important;
+}
+
+.el-table-column--selection .cell .el-checkbox__inner {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #DFE6E9;
+  
+  &:hover {
+    border-color: #FFD100;
+  }
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background: #FFD100;
+  border-color: #FFD100;
+  
+  &::after {
+    border-color: #2D3436;
+  }
+}
+
+.dashboard-container .container .el-table tbody tr td .cell button span {
+  padding: 0 8px;
+}
+
+// 操作按钮样式
+.blueBug {
+  color: #FF9500 !important;
+  font-weight: 600 !important;
+  
+  &:hover {
+    color: #FF7600 !important;
+  }
+}
+
+.delBut {
+  color: #FF5252 !important;
+  font-weight: 600 !important;
+  
+  &:hover {
+    color: #E53935 !important;
+  }
+}

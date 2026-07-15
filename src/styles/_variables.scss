@@ -1,0 +1,81 @@
+/* Variables - 美团外卖风格主题 */
+
+// Base color - 美团黄色暖色调
+$mine: #FFD100;
+$primary: #FFD100;
+$primary-light: #FFE066;
+$primary-dark: #F5C000;
+$loginBg: #FFF9E6;
+$blue: #2196F3;
+$green: #00C853;
+$yellow: #FFD100;
+$orange: #FF9500;
+$pink: #FF5252;
+$block: #2D3436;
+$gray-1: #2D3436;
+$gray-2: #636E72;
+$gray-3: #B2BEC3;
+$gray-4: #DFE6E9;
+$gray-5: #F5F6FA;
+$gray-6: #FAFBFC;
+$bgColor: #F5F6FA;
+$white: #fff;
+
+// 美团配色
+$meituan-yellow: #FFD100;
+$meituan-green: #00C853;
+$meituan-orange: #FF9500;
+$meituan-bg: #F5F6FA;
+
+// 渐变色
+$gradient-primary: linear-gradient(135deg, #FFD100 0%, #FFB800 100%);
+$gradient-warm: linear-gradient(135deg, #FFE259 0%, #FFA751 100%);
+$gradient-bg: linear-gradient(180deg, #FFF9E6 0%, #FFFFFF 100%);
+
+// Sidebar - 深色主题
+$sideBarWidth: 200px;
+$subMenuBg: #2D3436;
+$subMenuHover: #3D4448;
+$subMenuActiveText: #FFD100;
+$menuBg: #2D3436;
+$menuBgColor: #2D3436;
+$menuText: rgba(255, 255, 255, 0.8);
+$menuActiveText: #FFD100;
+
+// Login page
+$lightGray: #2D3436;
+$darkGray: #636E72;
+$loginCursorColor: #FFD100;
+
+// The :export directive is the magic sauce for webpack
+// https://mattferderer.com/use-sass-variables-in-typescript-and-javascript
+:export {
+  menuBg: $menuBg;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+}
+
+.avatar-uploader .el-upload{
+  // border: dashed 2px #D8DDE3 !important;
+  border-radius: 4px !important;
+  background: #FCFCFC;
+}
+.avatar-uploader .avatar-uploader-icon{
+  background: #FCFCFC;
+}
+.avatar-uploader .el-icon-plus:before{
+  content: '上传图片' !important;
+  font-size: 12px;
+  color:#000;
+}
+
+
+// 弹框样式处理
+.el-dialog{
+  border-radius: 8px;
+}
+.el-dialog__header{
+  background: #FBFBFA;
+  border-radius: 8px 8px 0 0;
+  border: none;
+}

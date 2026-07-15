@@ -1,0 +1,54 @@
+/* Element Variables - 美团外卖风格主题 */
+
+// Override Element UI variables
+
+// Primary colors - 美团黄色
+$--color-primary: #FFD100;
+$--color-primary-light-1: #FFD633;
+$--color-primary-light-2: #FFDB4D;
+$--color-primary-light-3: #FFE066;
+$--color-primary-light-4: #FFE680;
+$--color-primary-light-5: #FFEB99;
+$--color-primary-light-6: #FFF0B3;
+$--color-primary-light-7: #FFF5CC;
+$--color-primary-light-8: #FFFAE6;
+$--color-primary-light-9: #FFFDF5;
+
+// Semantic colors
+$--color-success: #00C853;
+$--color-warning: #FF9500;
+$--color-danger: #FF5252;
+$--color-info: #636E72;
+
+// Button
+$--button-font-weight: 600;
+$--button-border-radius: 20px;
+
+// Border colors
+$--border-color-base: #DFE6E9;
+$--border-color-light: #F5F6FA;
+$--border-color-lighter: #FAFBFC;
+$--border-radius-base: 8px;
+$--border-radius-small: 6px;
+
+// Table
+$--table-border: 1px solid #F5F6FA;
+
+// Text colors
+$--color-text-primary: #2D3436;
+$--color-text-regular: #636E72;
+$--color-text-secondary: #B2BEC3;
+$--color-text-placeholder: #B2BEC3;
+
+// Background colors
+$--background-color-base: #F5F6FA;
+
+// Box shadows
+$--box-shadow-base: 0 4px 16px rgba(0, 0, 0, 0.08);
+$--box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+// Icon font path, required
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+// Apply overrided variables in Element UI
+@import '~element-ui/packages/theme-chalk/src/index';
